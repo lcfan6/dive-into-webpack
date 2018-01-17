@@ -39,9 +39,7 @@ require(['gitbook'], function (gitbook) {
     }
 
     function checkModal() {
-      if (shouldClose) {
         return;
-      }
       // URL 检查
       for (var i = 0; i < excludeUrls.length; i++) {
         var exReg = new RegExp(excludeUrls[i], 'g');
